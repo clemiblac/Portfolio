@@ -22,7 +22,7 @@
         <link rel="stylesheet" href="../static/css/style.css">
 
         <title>Clementine Sraha Portfolio</title>
-        <link rel="shortcut icon" type="image/x-icon" href="../static/crash.png">
+        <link rel="shortcut icon" type="image/x-icon" href="">
     </head>
 
     
@@ -31,7 +31,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="#">
-                <img src="../static/crash.png" width='50' height='50'>Clementine Sraha</a>
+                <h1>Clementine Sraha</h1>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -43,18 +43,34 @@
                     </div>
                 </div>
         </nav>
-
+        <div style="height:150px;background-color:greenyellow;">
+            <h1 style="text-align:center;padding-top: 50px;"><strong>Project List</strong></h1>
+        </div>
         
         <div class="container">
-            <div>
-                <h1>Project list</h1>
-            </div>
+        
 
             <!-- First Row-->
             <div class="row">
                 <div>
-                    <h2 class="project-title"><img src="/icons8-coronavirus-64.png" alt="coronavirus image">COVID in the United States</h2>
-                    <div class="col" id="covid"></div>
+                    <h2 class="project-title">
+                        <img src="/icons8-coronavirus-64.png" alt="coronavirus image">
+                        <a href="http://gwu-covid-dashboard.herokuapp.com/">COVID in the United States, D.C.</a>
+                        
+                    </h2>
+                    <div class="col" id="covid">
+                        <p>
+                            This project explores COVID in the United States and compared data from The New York Times and The Atlantic
+                            to understand data reliability and integrity of reported COVID data. On this site, I created
+                            the following charts using JavaScript: [State] Reported Cases: Top Ten Counties,
+                            [State] Reported Deaths: Top Ten Counties,
+                            Re-arrangeable table of “US Counties with Highest Total Cases”,
+                            Both Honeycomb/ Tile Diagrams,
+                            Re-arrangeable New York Times and Atlantic Data Comparison Table,
+                            Data Reliability Donut Chart,
+                            Both Time Series Charts with buttons
+                        </p>
+                    </div>
                 </div>
             </div>
             <hr>
@@ -63,8 +79,21 @@
             <!-- Second Row -->
             <div class="row">
                 <div>
-                    <h2 class="project-title"><img src="https://img.icons8.com/color/48/000000/prisoner.png"/>Crime in Washington, D.C.</h2>
-                    <div class="col" id="crime"></div>
+                    <h2 class="project-title">
+                        <img src="https://img.icons8.com/color/48/000000/prisoner.png"/>
+                        <a href="https://gwu-dc-crime.herokuapp.com/">Crime in Washington, D.C.</a>
+
+                    </h2>
+                        
+                    <div class="col" id="crime">
+                        <p>
+                            The purpose of this project was to explore Washington, D.C. crime data from the open D.C. database,
+                             visualize the data and apply machine learning to the data. For this project, I was responsible 
+                             for building the website using HTML,bootstrap and CSS. I also built all 45 graphs in the Daily 
+                             Rhythm of crime chart and sunburst chart using JavaScript. Additionally,I developed the flask 
+                             app that pulled the information from database for the web visualizations using Python and mySQL.
+                        </p>
+                    </div>
                 </div>
             </div>
             <hr>
@@ -110,8 +139,8 @@
     <footer class="footer navbar-fixed-bottom">
         <div class="two-toned-footer-color"></div>
         <p class="text-muted text-muted-footer text-center">
-            <a href="https://icons8.com/icon/CGf5JvobsqEu/coronavirus">Coronavirus icon by Icons8</a>
-            <a href="https://icons8.com/icon/12032/prisoner">Prisoner icon by Icons8</a>
+            <a href="https://icons8.com/icon/CGf5JvobsqEu/coronavirus">Coronavirus icon by Icons8</a><br>
+            <a href="https://icons8.com/icon/12032/prisoner">Prisoner icon by Icons8</a><br>
             <br><br>
         </p>
     </footer>
