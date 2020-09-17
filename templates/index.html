@@ -19,7 +19,7 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
             
         <!--MODIFIED THE HREF FOR THE CSS FILE-->
-        <link rel="stylesheet" href="../static/css/style.css">
+        <link rel="stylesheet" href="{{url_for ('static',filename='css/style.css')}}">
 
         <title>Clementine Sraha Portfolio</title>
         <link rel="shortcut icon" type="image/x-icon" href="">
@@ -29,7 +29,7 @@
 
     <body>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
                 <a class="navbar-brand" href="#">
                 <h1>Clementine Sraha</h1>
                 </a>
@@ -38,8 +38,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ml-auto">
-                        <a class="nav-item nav-link active" href="/templates/index.html"><h5>Home</h5> <span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link" href="/templates/about.html"><h5>About</h5></a>
+                        <a class="nav-item nav-link active" href="{{ url_for('home') }}"><h5>Home</h5> <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="{{ url_for('about') }}"><h5>About</h5></a>
                     </div>
                 </div>
         </nav>
