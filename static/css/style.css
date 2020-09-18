@@ -15,8 +15,8 @@ p{
     color:#000000;
 }
 
-img {
-    max-width: 100%;
+#profile-picture {
+    max-width: 120%;
     height: 200px;
   }
 
